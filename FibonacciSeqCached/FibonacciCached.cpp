@@ -17,9 +17,9 @@ int FibonacciRecursiveFunc(int nthPos) {
 	else {
 		for (int i = 2; i < nthPos; i++) {
 			PastFibonacciCache[i] = PastFibonacciCache[i - 1] + PastFibonacciCache[i - 2];
-			if (i > 300) {
-				unsigned long long SecondLastTerm = PastFibonacciCache[299];
-				unsigned long long lastTerm = PastFibonacciCache[300];
+			if (i > 299) {
+				unsigned long long SecondLastTerm = PastFibonacciCache[298];
+				unsigned long long lastTerm = PastFibonacciCache[299];
 				PastFibonacciCache[300] = {}; PastFibonacciCache[0] = SecondLastTerm; PastFibonacciCache[1] = lastTerm;
 				i - 300;  nthPos - 300;
 			}
